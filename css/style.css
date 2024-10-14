@@ -4,7 +4,7 @@
   align-items: center;
   padding: 20px;
   width: 100%;
-  max-width: 50%;
+  max-width: 55%;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .about-section {
-  max-width: 50%; /* Keep the same width as the container */
+  max-width: 55%; /* Keep the same width as the container */
   margin: auto; /* Center the about section */
   padding: 10px;
 }
