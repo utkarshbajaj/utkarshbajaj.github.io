@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; /* Roboto Light */
+  margin: 0;
+  padding: 0;
+}
+
+.links span {
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the name and links vertically */
+    align-items: center; /* Align items to the start */
+    max-width: 100%; /* Takes full width on mobile */
+    text-align: center; /* Center text */
+  }
+
+  .links {
+  }
+
+  .links span {
+    margin-left: 0; /* Remove margin between links since they are now stacked */
+    margin-right: 15px; /* Add some spacing between the links horizontally */
+  }
+}
