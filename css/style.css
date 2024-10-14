@@ -13,16 +13,22 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; /* Roboto Light */
   margin: 0;
-  background-color: #1a1b26; /* TokyoNight background */
-  color: #a9b1d6; /* Light greyish-blue text */
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
   padding: 0;
 }
 
 .name h2 {
   font-size: 24px;
   margin: 0;
-  font-weight: 700; /* Bold for heading */
-  color: #7aa2f7; /* Bright cyan for heading */
+  font-weight: 700;
+  color: #000000; /* Black text for heading */
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #000000; /* Black border */
+  width: 100%;
 }
 
 .links span {
@@ -31,7 +37,13 @@ body {
 
 a {
   text-decoration: none;
-  color: #bb9af7;
+  color: red; /* Blue for links */
+}
+
+.about-section {
+  max-width: 50%; /* Keep the same width as the container */
+  margin: auto; /* Center the about section */
+  padding: 10px;
 }
 
 a:hover {
@@ -41,7 +53,7 @@ a:hover {
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack the name and links vertically */
-    align-items: flex-start; /* Align items to the start */
+    align-items: center; /* Align items to the start */
     max-width: 100%; /* Takes full width on mobile */
     justify-content: center;
     text-align: left; /* Center text */
@@ -53,11 +65,17 @@ a:hover {
     margin-top: 10px; /* Add space between name and links */
     align-items: flex-start;
     width: 100%; /* Take full width on mobile */
-    max-width: 80%; /* Adjust max-width for more space on mobile */
+    max-width: 90%; /* Adjust max-width for more space on mobile */
+  }
+
+  .about-section {
+    max-width: 90%; /* Full width on mobile */
+    padding-left: 20px;
   }
 
   .links span {
     margin-left: 15px; /* Remove margin between links since they are now stacked */
     margin-right: 15px; /* Add some spacing between the links horizontally */
+    padding: 5px;
   }
 }
