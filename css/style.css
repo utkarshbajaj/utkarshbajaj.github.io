@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   max-width: 50%;
   box-sizing: border-box;
@@ -13,7 +13,16 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; /* Roboto Light */
   margin: 0;
+  background-color: #1a1b26; /* TokyoNight background */
+  color: #a9b1d6; /* Light greyish-blue text */
   padding: 0;
+}
+
+.name h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700; /* Bold for heading */
+  color: #7aa2f7; /* Bright cyan for heading */
 }
 
 .links span {
@@ -22,26 +31,33 @@ body {
 
 a {
   text-decoration: none;
-  color: red;
+  color: #bb9af7;
 }
 
 a:hover {
-  color: blue;
+  color: #7aa2f7; /* Cyan color for hovered links */
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack the name and links vertically */
-    align-items: center; /* Align items to the start */
+    align-items: flex-start; /* Align items to the start */
     max-width: 100%; /* Takes full width on mobile */
-    text-align: center; /* Center text */
+    justify-content: center;
+    text-align: left; /* Center text */
   }
 
   .links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    margin-top: 10px; /* Add space between name and links */
+    align-items: flex-start;
+    width: 100%; /* Take full width on mobile */
+    max-width: 80%; /* Adjust max-width for more space on mobile */
   }
 
   .links span {
-    margin-left: 0; /* Remove margin between links since they are now stacked */
+    margin-left: 15px; /* Remove margin between links since they are now stacked */
     margin-right: 15px; /* Add some spacing between the links horizontally */
   }
 }
