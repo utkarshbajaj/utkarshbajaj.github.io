@@ -34,8 +34,14 @@ hr {
   width: 100%;
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if necessary */
+}
+
 .links span {
-  margin-left: 15px;
+  white-space: nowrap; /* Prevent wrapping within each span */
+  margin: 0 5px; /* Optional: Adjust spacing between links */
 }
 
 a {
