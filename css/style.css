@@ -9,7 +9,20 @@
   margin: 0 auto;
 }
 
+#cat {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+a:hover {
+  cursor: url("../assets/cat-jump.png"), auto;
+}
+
 body {
+  cursor: url("../assets/cat-look.png"), auto;
   font-family: "Roboto", sans-serif;
   font-weight: 300; /* Roboto Light */
   margin: 0;
